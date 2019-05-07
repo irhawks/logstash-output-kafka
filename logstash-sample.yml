@@ -7,7 +7,7 @@ output {
   pulsar {
     bootstrap_servers => "pulsar://10.0.0.75:6650"
 	codec => json
-    topic_id => ["logstash_ouput_to_pulsar"]
+    topic_id => ["logstash_output_to_pulsar"]
   }
 }
 
