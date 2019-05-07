@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://mirrors.irhawks.com/rubygems/'
 
 gemspec
 

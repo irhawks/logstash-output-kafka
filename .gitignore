@@ -5,3 +5,5 @@ Gemfile.lock
 .idea/
 vendor
 *.jar
+
+.mvn
