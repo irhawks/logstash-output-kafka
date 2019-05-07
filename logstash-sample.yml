@@ -1,0 +1,12 @@
+input {
+	stdin {
+	}
+}
+
+output {
+  pulsar {
+    bootstrap_servers => "pulsar://10.0.0.75:6650"
+    topics => ["logstash_ouput_to_pulsar"]
+  }
+}
+
