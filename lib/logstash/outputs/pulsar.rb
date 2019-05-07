@@ -1,7 +1,7 @@
 require 'logstash/namespace'
 require 'logstash/outputs/base'
 require 'java'
-require 'logstash-output-kafka_jars.rb'
+require 'logstash-output-pulsar_jars.rb'
 
 java_import org.apache.kafka.clients.producer.ProducerRecord
 
@@ -48,10 +48,10 @@ java_import org.apache.kafka.clients.producer.ProducerRecord
 # For more information see http://kafka.apache.org/documentation.html#theproducer
 #
 # Kafka producer configuration: http://kafka.apache.org/documentation.html#newproducerconfigs
-class LogStash::Outputs::Kafka < LogStash::Outputs::Base
+class LogStash::Outputs::Pulsar < LogStash::Outputs::Base
   declare_threadsafe!
 
-  config_name 'kafka'
+  config_name 'pulsar'
 
   default :codec, 'plain'
 
@@ -378,4 +378,4 @@ class LogStash::Outputs::Kafka < LogStash::Outputs::Base
     props.put("sasl.kerberos.service.name",sasl_kerberos_service_name) unless sasl_kerberos_service_name.nil?
   end
 
-end #class LogStash::Outputs::Kafka
+end #class LogStash::Outputs::Pulsar

@@ -1,4 +1,4 @@
-source 'http://mirrors.irhawks.com/rubygems/'
+source 'http://mirrors.tuna.tsinghua.edu.cn/rubygems/'
 
 gemspec
 
